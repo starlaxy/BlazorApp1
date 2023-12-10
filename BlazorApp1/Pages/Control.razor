@@ -1,0 +1,41 @@
+@page "/control"
+@using BlazorApp1.Shared
+
+<h2>Robot Control</h2>
+
+<!-- Using RobotSummaryCard -->
+@foreach (var robot in Robots)
+{
+    <BlazorApp1.Components.RobotSummaryCard RobotId="@robot.RobotId" 
+                      Status="@robot.Status" 
+                      LastActivity="@robot.LastActivity" 
+                      NextActivity="@robot.NextActivity"
+                      OnViewDetails="@(() => SelectRobot(robot.RobotId))" />
+}
+
+
+@if (!string.IsNullOrEmpty(SelectedRobotId))
+{
+    <BlazorApp1.Components.RobotDetailPanel SelectedRobotId="@SelectedRobotId" />
+    <BlazorApp1.Components.RobotCommandInterface SelectedRobotId="@SelectedRobotId" />
+}
+
+@code {
+    private List<Robot> Robots { get; set; }
+    private string SelectedRobotId { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Robots = new List<Robot>
+        {
+            new Robot { RobotId = "R1", Status = "Active", LastActivity = "Checked inventory at 10:30 AM", NextActivity = "Restock at 3:00 PM" },
+            new Robot { RobotId = "R2", Status = "Idle", LastActivity = "Restocked Shelf B at 9:15 AM", NextActivity = "Maintenance at 4:00 PM" }
+            // Add more robots here
+        };
+    }
+
+    private void SelectRobot(string robotId)
+    {
+        SelectedRobotId = robotId;
+    }
+}

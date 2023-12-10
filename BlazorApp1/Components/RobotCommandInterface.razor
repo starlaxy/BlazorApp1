@@ -1,0 +1,23 @@
+<div class="robot-command-interface">
+    <h3>Send Command</h3>
+    <select @bind="SelectedCommand">
+        @foreach (var command in Commands)
+        {
+            <option value="@command">@command</option>
+        }
+    </select>
+    <button class="btn btn-primary" @onclick="ExecuteCommand">Execute</button>
+    <!-- Command execution log display -->
+</div>
+
+@code {
+    [Parameter] public string SelectedRobotId { get; set; }
+    private string SelectedCommand { get; set; }
+    private List<string> Commands = new List<string> { "Restock", "Shutdown", "Restart" };
+
+    private void ExecuteCommand()
+    {
+        // Implement command execution logic
+        // Example: Console.WriteLine($"Executing {SelectedCommand} on robot {SelectedRobotId}");
+    }
+}

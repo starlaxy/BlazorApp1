@@ -1,0 +1,32 @@
+[
+    {
+        "timestamp": "2023-12-01T10:30:00",
+        "robotId": "R1",
+        "activity": "Restocked Fridge A",
+        "status": "Completed"
+    },
+    {
+        "timestamp": "2023-12-01T11:00:00",
+        "robotId": "R2",
+        "activity": "Maintenance Check",
+        "status": "Completed"
+    },
+    {
+        "timestamp": "2023-12-01T11:30:00",
+        "robotId": "R1",
+        "activity": "Inventory Scan",
+        "status": "In Progress"
+    },
+    {
+        "timestamp": "2023-12-01T12:00:00",
+        "robotId": "R2",
+        "activity": "Restocked Shelf B",
+        "status": "Error"
+    },
+    {
+        "timestamp": "2023-12-01T12:30:00",
+        "robotId": "R1",
+        "activity": "Cleaning Aisle 3",
+        "status": "Completed"
+    }
+]

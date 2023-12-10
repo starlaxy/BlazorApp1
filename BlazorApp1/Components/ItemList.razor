@@ -1,0 +1,32 @@
+@using BlazorApp1.Shared
+@code {
+    
+
+    [Parameter]
+    public List<Item> Items { get; set; }
+}
+
+<div class="item-list-container">
+    <div class="item-list">
+        @foreach (var item in Items)
+        {
+            <div class="item-row">
+                <div class="item-info">
+                    <img src="@item.ImageUrl" alt="@item.Name's profile picture" class="item-image">
+                    <div class="item-text">
+                        <p class="item-name">@item.Name</p>
+                        <p class="item-email">@item.Email</p>
+                    </div>
+                </div>
+                <p class="item-amount">@item.Amount</p>
+            </div>
+        }
+    </div>
+    <div class="update-info">
+        <svg class="update-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <!-- SVG content -->
+        </svg>
+        <span>Updated just now</span>
+    </div>
+</div>
+

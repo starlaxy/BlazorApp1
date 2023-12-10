@@ -1,0 +1,33 @@
+<div class="robot-detail-panel">
+    <h3>Robot Details (ID: @SelectedRobotId)</h3>
+    <div class="detail-grid">
+        <div class="detail-item">
+            <label>Operational Status:</label>
+            <p>Active</p>
+        </div>
+        <div class="detail-item">
+            <label>Battery Level:</label>
+            <p>75%</p>
+        </div>
+        <div class="detail-item">
+            <label>Last Maintenance:</label>
+            <p>2023-09-15</p>
+        </div>
+        <div class="detail-item">
+            <label>Current Task:</label>
+            <p>Restocking Drinks in Aisle 3</p>
+        </div>
+        <div class="detail-item">
+            <label>Total Tasks Today:</label>
+            <p>14 tasks completed</p>
+        </div>
+        <div class="detail-item">
+            <label>Error Logs:</label>
+            <p>None</p>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string SelectedRobotId { get; set; }
+}

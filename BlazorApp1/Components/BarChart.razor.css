@@ -1,0 +1,59 @@
+.chart-container {
+    background-color: #f8fafc; /* bg-gray-50 */
+    border-radius: 0.75rem; /* rounded-xl */
+}
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 0.5rem; /* gap-2 */
+    background-color: #ffffff; /* bg-white */
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-md */
+}
+
+.y-axis-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    color: #718096; /* text-gray-400 */
+    font-size: 0.875rem; /* text-sm */
+    height: 350px;
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* gap between bar and label */
+    height: 350px; /* same as y-axis-labels height */
+    justify-content: flex-end; /* aligns bar to bottom */
+}
+
+.bar-rect {
+    width: 100%;
+    background-color: #60a5fa; /* bg-blue-300 */
+    border-radius: 0.375rem; /* rounded-md */
+}
+
+.bar-label {
+    color: #718096; /* text-gray-400 */
+    font-size: 0.875rem; /* text-sm */
+    text-align: center;
+}
+
+.chart-footer {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem; /* pt-6 */
+    padding-bottom: 0.5rem; /* pb-2 */
+    color: #718096; /* text-gray-500 */
+    font-size: 0.875rem; /* text-sm */
+}
+
+.icon {
+    height: 1.25rem; /* h-5 */
+    width: 1.25rem; /* w-5 */
+}

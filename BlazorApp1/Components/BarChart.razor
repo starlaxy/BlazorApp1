@@ -1,0 +1,44 @@
+<div class="chart-container">
+    <div class="chart-grid">
+        <!-- Y-axis Labels -->
+        <div class="y-axis-labels">
+            <p>$5K</p>
+            <p>$4K</p>
+            <p>$3K</p>
+            <p>$2K</p>
+            <p>$1K</p>
+            <p>$0K</p>
+        </div>
+
+        <!-- Bar Chart Columns -->
+        @for (int month = 1; month <= 12; month++)
+        {
+            <div class="bar">
+                <div class="bar-rect" style="height: @(GetBarHeight(month))px"></div>
+                <p class="bar-label">@GetMonthName(month)</p>
+            </div>
+        }
+    </div>
+
+    <div class="chart-footer">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <!-- SVG content -->
+        </svg>
+        <span>Last 12 months</span>
+    </div>
+</div>
+
+@code {
+    private string GetBarHeight(int month)
+    {
+        // Placeholder logic to determine bar height
+        // Replace with actual data logic
+        return (month * 20).ToString();
+    }
+
+    private string GetMonthName(int month)
+    {
+        DateTime date = new DateTime(1, month, 1);
+        return date.ToString("MMM");
+    }
+}

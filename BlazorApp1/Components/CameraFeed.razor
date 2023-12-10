@@ -1,0 +1,15 @@
+@code {
+    [Parameter]
+    public string VideoUrl { get; set; }
+}
+
+@if (!string.IsNullOrEmpty(VideoUrl))
+{
+    <iframe src="@VideoUrl"
+            width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+    </iframe>
+}
+else
+{
+    <p>No video URL provided.</p>
+}

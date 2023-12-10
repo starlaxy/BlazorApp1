@@ -1,0 +1,167 @@
+@page "/dashboard"
+@using BlazorApp1.Shared
+
+<PageTitle>Dashboard</PageTitle>
+
+<div class="dashboard">
+    <Card>
+    <Header>
+<svg fill="#000000" height="28px" width="28px" version="1.2" baseProfile="tiny" id="inventory"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 256 219.3"
+	 xml:space="preserve">
+<path d="M118.8,209.6h-59v-59h22.7v18.8h13.5v-18.8h22.7V209.6z M195.9,209.6h-59v-59h22.7v18.8h13.5v-18.8h22.7V209.6z
+	 M157.8,132.5h-59v-59h22.7v18.8h13.5V73.5h22.7V132.5z M246.6,78.9l-16.1-7.5v139.9h-18.2V62.6l-84.5-39.9L43.5,62.6v148.5H25.3
+	V71.3L9.2,78.9L1.4,62.4L127.8,2.7l126.7,59.6L246.6,78.9z"/>
+</svg><span>Total Inventory</span></Header>
+    <Body>
+        $5,000.00
+    </Body>
+    </Card>
+
+
+<Card>
+    <Header><svg width="32px" height="32px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path fill="#444" d="M3.5 8c0.3 0 0.5 0.2 0.5 0.5v2c0 0.3-0.2 0.5-0.5 0.5s-0.5-0.2-0.5-0.5v-2c0-0.3 0.2-0.5 0.5-0.5v0zM3.5 7v0c-0.8 0-1.5 0.7-1.5 1.5v2c0 0.8 0.7 1.5 1.5 1.5v0c0.8 0 1.5-0.7 1.5-1.5v-2c0-0.8-0.7-1.5-1.5-1.5v0z"></path>
+<path fill="#444" d="M8 7v3.5c0 0.3-0.2 0.5-0.5 0.5s-0.5-0.2-0.5-0.5v-3.5h-1v3.5c0 0.8 0.7 1.5 1.5 1.5v0c0.8 0 1.5-0.7 1.5-1.5v-3.5h-1z"></path>
+<path fill="#444" d="M13 7h-3v1h1v4h1v-4h1z"></path>
+<path fill="#444" d="M15 6v-1h-2.4l-3.7-3c0.1-0.2 0.1-0.3 0.1-0.5 0-0.8-0.7-1.5-1.5-1.5s-1.5 0.7-1.5 1.5c0 0.2 0 0.3 0.1 0.5l-3.7 3h-2.4v9h1v1h15v-9h-1zM6.7 2.8c0.3 0.1 0.5 0.2 0.8 0.2s0.5-0.1 0.8-0.2l2.7 2.2h-7l2.7-2.2zM14 13h-13v-7h13v7z"></path>
+</svg><span>Out-of-Stock Items</span></Header>
+    <Body>
+        8
+    </Body>
+    </Card>
+    <!-- Add more cards for other metrics and operations -->
+<Card>
+    <Header><svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="32px" height="32px" viewBox="0 0 512 512"  xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#000000;}
+]]>
+</style>
+<g>
+	<path class="st0" d="M77.609,448h52.781c7.516,0,13.609-6.094,13.609-13.609V315.094c0-7.516-6.094-13.609-13.609-13.609H77.609
+		c-7.516,0-13.609,6.094-13.609,13.609v119.297C64,441.906,70.094,448,77.609,448z"/>
+	<path class="st0" d="M197.609,448h52.781c7.516,0,13.609-6.094,13.609-13.609V235.094c0-7.516-6.094-13.609-13.609-13.609h-52.781
+		c-7.516,0-13.609,6.094-13.609,13.609v199.297C184,441.906,190.094,448,197.609,448z"/>
+	<path class="st0" d="M317.609,448h52.781c7.516,0,13.609-6.094,13.609-13.609V139.094c0-7.516-6.094-13.609-13.609-13.609h-52.781
+		c-7.516,0-13.609,6.094-13.609,13.609v295.297C304,441.906,310.094,448,317.609,448z"/>
+	<path class="st0" d="M437.609,448h52.781c7.516,0,13.609-6.094,13.609-13.609V43.094c0-7.516-6.094-13.609-13.609-13.609h-52.781
+		c-7.516,0-13.609,6.094-13.609,13.609v391.297C424,441.906,430.094,448,437.609,448z"/>
+	<path class="st0" d="M498.391,482H45.609C38.094,482,32,475.906,32,468.391V13.609C32,6.094,25.906,0,18.391,0h-4.781
+		C6.094,0,0,6.094,0,13.609v484.781C0,505.906,6.094,512,13.609,512h484.781c7.516,0,13.609-6.094,13.609-13.609v-2.781
+		C512,488.094,505.906,482,498.391,482z"/>
+</g>
+</svg><span>Daily Sales</span></Header>
+    <Body>
+        175
+    </Body>
+    </Card>
+<Card>
+    <Header><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 3.51221C5.50442 4.74772 3 8.08143 3 12.0001C3 16.9707 7.02944 21.0001 12 21.0001C16.9706 21.0001 21 16.9707 21 12.0001C21 8.08143 18.4956 4.74772 15 3.51221" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><span>Avg. Inventory Turnover</span></Header>
+    <Body>
+        3
+    </Body>
+    </Card>
+
+    <!-- Sales Trend Chart -->
+    
+    <Card ColumnSpan="2">
+        <Header>Sales Trend Chart</Header>
+        <Body>
+            <BlazorApp1.Components.BarChart />
+        </Body>
+    </Card>
+ <!-- Top Selling Drinks -->
+    <Card>
+        <Header>Top Selling Drinks</Header>
+        <Body>
+           <BlazorApp1.Components.ItemList Items="@TopSellingItems" />  
+        </Body>
+    </Card>
+     <!-- Low Stock Alert -->
+    <Card>
+        <Header>Low Stock Alert</Header>
+        <Body>
+            <BlazorApp1.Components.ItemList Items="@LowStockItems" /> 
+        </Body>
+    </Card>
+
+
+    <!-- Live Camera Feed -->
+    <Card ColumnSpan="2">
+        <Header>Live Camera Feed</Header>
+        <Body>
+            <BlazorApp1.Components.CameraFeed VideoUrl="https://player.vimeo.com/video/179738652?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1&muted=1" />
+        </Body>
+    </Card>
+<Card ColumnSpan="2">
+        <Header>Live Camera Feed2</Header>
+        <Body>
+            <BlazorApp1.Components.CameraFeed VideoUrl="https://player.vimeo.com/video/135737478?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1&muted=1" />
+        
+        </Body>
+    </Card>
+        <!-- Weekly Performance Summary -->
+    <Card>
+        <Header>Weekly Performance Summary</Header>
+        <Body>
+            <p>Stats and Figures Placeholder</p>
+        </Body>
+    </Card>
+
+    <!-- Spotlight Campaign -->
+    <Card>
+        <Header>Spotlight Campaign</Header>
+        <Body>
+            <p>Details/Image Placeholder</p>
+        </Body>
+    </Card>
+
+    <!-- Inventory Breakdown Chart -->
+    <Card>
+        <Header>Inventory Breakdown</Header>
+        <Body>
+            <p>Pie/Donut Chart Placeholder</p>
+        </Body>
+    </Card>
+<!-- Upcoming Deliveries -->
+    <Card>
+        <Header>Upcoming Deliveries</Header>
+        <Body>
+            <ul>
+                <li>Delivery 1 - Date/Time</li>
+                <li>Delivery 2 - Date/Time</li>
+                <!-- More items -->
+            </ul>
+        </Body>
+    </Card>
+
+</div>
+@code {
+    private List<Item> TopSellingItems { get; set; }
+    private List<Item> LowStockItems { get; set; }
+
+    protected override void OnInitialized()
+    {
+        TopSellingItems = new List<Item>
+        {
+            new Item { Name = "Coca-Cola", Email = "contact@cocacola.com", ImageUrl = "https://www.1001spirits.com/tuotekuvat/600x600/Coca%20Cola%20Classic%2024x0%2C33%20l.png", Amount = 200 },
+            new Item { Name = "Pepsi", Email = "contact@pepsi.com", ImageUrl = "https://m.media-amazon.com/images/I/51LrJgOxNlL._AC_SL1268_.jpg", Amount = 150 },
+            new Item { Name = "Sparkling", Email = "contact@pepsi.com", ImageUrl = "https://m.media-amazon.com/images/I/71SlSjR-odL._AC_SL1500_.jpg", Amount = 150 },
+            
+        };
+
+        LowStockItems = new List<Item>
+            {
+                new Item { Name = "Asahi Super Dry", Email = "contact@asahi.com", ImageUrl = "https://m.media-amazon.com/images/I/71Hyt3KBW5L._AC_SL1096_.jpg", Amount = 3 },
+                new Item { Name = "Green Tea", Email = "contact@pepsi.com", ImageUrl = "https://m.media-amazon.com/images/I/51h3uTGiLoL._AC_SL1000_.jpg", Amount = 15 },
+            new Item { Name = "Green Tea", Email = "contact@pepsi.com", ImageUrl = "https://m.media-amazon.com/images/I/51h3uTGiLoL._AC_SL1000_.jpg", Amount = 17},
+            new Item { Name = "Kettle Barley Tea", Email = "contact@pepsi.com", ImageUrl = "https://m.media-amazon.com/images/I/61aFk7RJBTL._AC_SL1000_.jpg", Amount = 20 },
+            
+            };
+    }
+}

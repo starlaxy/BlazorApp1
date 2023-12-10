@@ -1,0 +1,15 @@
+<div class="robot-summary-card">
+    <p>Robot ID: @RobotId</p>
+    <p>Status: @Status</p>
+    <p>Last Activity: @LastActivity</p>
+    <p>Next Activity: @NextActivity</p>
+    <button class="btn btn-secondary" @onclick="() => OnViewDetails.InvokeAsync(RobotId)">View Details</button>
+</div>
+
+@code {
+    [Parameter] public string RobotId { get; set; }
+    [Parameter] public string Status { get; set; }
+    [Parameter] public string LastActivity { get; set; }
+    [Parameter] public string NextActivity { get; set; }
+    [Parameter] public EventCallback<string> OnViewDetails { get; set; }
+}

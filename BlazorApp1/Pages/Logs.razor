@@ -1,0 +1,55 @@
+@page "/logs"
+@inject HttpClient Http
+
+<PageTitle>Robot Operation Logs</PageTitle>
+
+<h1>Robot Operation Logs</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (logEntries == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Robot ID</th>
+                <th>Activity</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var log in logEntries)
+            {
+                <tr>
+                    <td>@log.Timestamp</td>
+                    <td>@log.RobotId</td>
+                    <td>@log.Activity</td>
+                    <td>@log.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private RobotLogEntry[]? logEntries;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(600); // 0.6 second delay
+        logEntries = await Http.GetFromJsonAsync<RobotLogEntry[]>("sample-data/robot-logs.json");
+    }
+
+    public class RobotLogEntry
+    {
+        public DateTime Timestamp { get; set; }
+        public string RobotId { get; set; }
+        public string Activity { get; set; }
+        public string Status { get; set; }
+    }
+}
