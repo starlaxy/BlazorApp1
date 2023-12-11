@@ -1,7 +1,8 @@
 # Blazor WebAssembly Demo
 
 A demo web app for a mock store management system, utilizing a Blazor WebAssembly frontend. This project showcases a practical implementation of Blazor technology in creating a user-centric and interactive web application.
-[live demo can be checked here]([https://example.com](https://guileless-mandazi-54efcd.netlify.app/dashboard))
+
+# live demo can be checked [here](https://guileless-mandazi-54efcd.netlify.app/dashboard)
 
 ## Features
 - **Interactive Dashboard**: A straightforward interface for managing inventory in real time, giving users essential information about stock levels and product specifics.
